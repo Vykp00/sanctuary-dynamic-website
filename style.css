@@ -1,0 +1,96 @@
+header {
+  color: #caf9f4;
+  background-color: #504c48a3;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/559d822ae4b0b0ab59484d42/1443047453527-CS78ENH7ITI0KNKC9ZYP/Sanctuary+Birds.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  padding: 8%;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#navigationbar{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFBF69;
+  position: sticky;
+  top: 0;
+
+}
+
+#navigationbar a{
+  color: #CBF3F0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 1.5%;
+  display: inline-flex;
+}
+
+.content{
+  padding:2%;
+  display: flex;
+  display: -ms-flexbox;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+  -ms-flex: 30%;
+  flex: 30%;
+  padding: 2%;
+}
+
+.maincontent{
+  -ms-flex: 30%;
+  flex: 70%;
+}
+img{
+  width:100%;
+}
+@media screen and (max-width:700px){
+  #navigationbar{
+    position: relative;
+  }
+  .content{
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+table{
+  
+  width: 100%;
+
+  }
+td{
+  background-color: #fcc378;
+  border: 2px solid white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 2%;
+  }
+a:link{color: #FFBF69;}
+a:hover{color: blue ;}
+a:visited {
+  color: #370e37;
+}
+.personname{
+  color: #434141;
+  text-align: left;
+}
+.footer{
+  color: #caf9f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFBF69;
+  padding: 1%;
+  text-align: left;
+  font-size: 1em;
+}
+}
