@@ -37,3 +37,5 @@ async function connectToURL(url){
 connectToURL('https://reststop.randomhouse.com/resources/works/?expandLevel=1&search=Grisham').catch(err=>{
     console.log(err.toString())
 });
+/* You can only await a promise inside an async method. This is because await blocks the thread. 
+This will defeat the primary purpose. So the sunction within which an await is used HAS TO BE async. */
