@@ -1,0 +1,10 @@
+{
+    "name": "membership",
+    "version": "1.0.0",
+    "description": "Retrieve the user information in the form",
+    "main": "index.js",
+    "dependencies": {
+        "express": "4.x"
+    }
+
+}
