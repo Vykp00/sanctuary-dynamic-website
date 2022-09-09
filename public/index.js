@@ -15,4 +15,12 @@ for (let i = 0; i < 5; i++){
     }
 }
 }
+const express = require('express');
+const app = new express();
 
+app.get("/", (req,res)=>{
+    return res.send("Hello World");
+});
+let server = app.listen(0, ()=>{
+    console.log("Listening at http://localhost:"+server.address())
+})
