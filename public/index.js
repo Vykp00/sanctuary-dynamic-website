@@ -15,12 +15,16 @@ for (let i = 0; i < 5; i++){
     }
 }
 }
-const express = require('express');
-const app = new express();
 
-app.get("/", (req,res)=>{
-    return res.send("Hello World");
-});
-let server = app.listen(0, ()=>{
-    console.log("Listening at http://localhost:"+server.address())
-})
+function getPositive(arr){
+    let arr2 = [];
+    for(var i of arr){
+        let elem=i;
+        if (elem>=0){
+            arr2.push(elem);
+        }
+    }return arr2;
+
+}
+let arrNeg=[-1,2,5,6,-8];
+console.log(getPositive(arrNeg));

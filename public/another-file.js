@@ -39,3 +39,13 @@ connectToURL('https://reststop.randomhouse.com/resources/works/?expandLevel=1&se
 });
 /* You can only await a promise inside an async method. This is because await blocks the thread. 
 This will defeat the primary purpose. So the sunction within which an await is used HAS TO BE async. */
+const express = require('express');
+const app = new express();
+
+app.get("/", (req,res)=>{
+    return res.send("Hello World");
+});
+let server = app.listen(0, ()=>{
+    console.log("Listening at http://localhost:"+server.address())
+})
+
